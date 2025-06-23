@@ -19,7 +19,7 @@ public class DemoApplication {
     @GetMapping("/")
     public String hello() {
         // Replace "app2" with the Kubernetes service name for app2
-        String app2Response = restTemplate.getForObject("http://app2:8080/", String.class);
+        String app2Response = restTemplate.getForObject("http://localhost:8081/", String.class);
         return "Hello from app1! app2 resp from app1: " + app2Response;
     }
 }
