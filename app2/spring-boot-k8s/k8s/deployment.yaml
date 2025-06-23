@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-boot-app2
+  name: spring-boot-app3
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: spring-boot-app2
+      app: spring-boot-app3
   template:
     metadata:
       labels:
-        app: spring-boot-app2
+        app: spring-boot-app3
     spec:
       containers:
       - name: app
         image: ghcr.io/inckrisz/spring-boot-k8s:latest
         ports:
-        - containerPort: 8081
+        - containerPort: 8082
