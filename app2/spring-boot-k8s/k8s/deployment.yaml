@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: ghcr.io/inckrisz/spring-boot-k8s:latest
+        image: ghcr.io/inckrisz/spring-boot-k8s2:latest
         ports:
         - containerPort: 8082
